@@ -1,0 +1,108 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+body{
+    font-family: georgia,serif;
+    background-color: #cfe2f3;
+}
+
+.form-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+}
+
+.form-error{
+    color: red;
+    font-size: 0.8em;
+    align-self: flex-end;
+}
+
+.input-wrapper{
+    position: relative;
+}
+
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+  
+label, .form-control-label {
+    font-size: 0.8em;
+    position: absolute;
+    top: 0.2ex;
+    z-index: 1;
+    left: 2em;
+    background-color: white;
+    padding: 0 10px;
+}
+
+input, .form-control {
+    border-radius: 15px;
+    padding: 2px 15px;
+    border: solid 1px grey;
+    box-shadow: none;
+    position: relative;
+    line-height: 6ex;
+    margin: 10px;
+    width: 300px;
+}
+
+.form-control-label{
+    text-transform: lowercase;
+}
+
+input:valid{
+    font-weight: 500;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+input:focus{
+    outline: none!important;
+}
+
+input::placeholder {
+    font-weight: normal;
+}
+
+button {
+    background-color: #393d57;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    padding: 10px 20px;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.label-error{
+    color: red;
+}
+
+.error {
+    border-color: red;
+}
