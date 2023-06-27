@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Bela Garrido Kochkarova
 
-Things you may want to cover:
+This is the completed case study whiches uses a Rails API endpoint and a React form component to validate and submit customer data.
 
-* Ruby version
+## Viewing the database
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+You can use /api/v1/guests to view table data.
